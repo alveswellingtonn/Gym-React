@@ -38,8 +38,8 @@
 }
 
 .category>:nth-child(2) {
-   font-size: 1rem;
-   font-weight: bold;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 .category>:nth-child(3) {
@@ -53,11 +53,26 @@
     gap: 2rem;
 }
 
-.join-now>img { 
+.join-now>img {
     width: 1rem;
 }
 
 .category:hover {
     background: var(--planCard);
     cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .programs-header {
+        flex-direction: column;
+        gap: 1rem;
+        font-size: x-large;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    .programs-categories {
+        flex-direction: column;
+    }
 }
